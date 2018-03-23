@@ -60,7 +60,9 @@ header span,.email span{
     -moz-border-radius: 6px;
     cursor: pointer;
 }
-
+.header-left{
+    text-align: center;
+}
 .pink-circle{
     margin:0 auto;
      width: 60px;
@@ -110,7 +112,7 @@ header span,.email span{
 }
 /* skill */
 #skill{
-    height: 450px;
+    /* height: 450px; */
     background-image:url(../img/skill.jpg);
     background-repeat: repeat;
     background-attachment: fixed;
@@ -118,44 +120,17 @@ header span,.email span{
     background-size: cover;
     color: #FFFFFF; 
 }
+#skill::after{
+    clear: both;
+    display: block;
+    content:"";
+}
 #skill-container{
     height: 100%;
     text-align: center;
     padding:4%;
     background: url(../img/15.png),repeat;
 }
-/* .canvas{
-
-    height: 200px;
-    text-align: center;
-    color:rgb(255, 15, 101);
-    padding-top: 20px;
-}
-canvas{
-    margin-top: 50px;
-}
-
-
-#skill-container div{
-    height: 289px;
-    margin:0;
-    display: inline-block;
-}
-.myskill p{
-    color: white;
-    margin:80px 0;
-}
-.span{
-    width: 200px;
-    color: white;
-    display: block;
-    height: 45px;
-    cursor: pointer;
-    line-height: 45px;
-    text-align: center;
-    font-size: larger;
-    background-color: grey;
-} */
 h4{
     color: rgb(255, 15, 101);
 }
@@ -231,30 +206,26 @@ h4{
 }
 
 #top img{
-     width: 150px;
-    height: 150px;
-  /*  line-height: 50px;
-    text-align: center;
-    color: rgb(255, 15, 101); */
+    width: 100px;
+    height: 100px;
     position: fixed;
     bottom:10px;
     right: 10px;
     cursor: pointer;
-  /*   border-radius: 50% 50%;
-    background-color: transparent;
-    border:2px solid rgb(255, 15, 101); */
 }
 
 @media (max-width:768px) {
     .header-center,.header-right{
         display: none;
     }
+    #header-sec{
+        width: 100%;
+        text-align: center;
+        padding: 40% 0 0 0;
+    }
     .knowme-container img{
         float: left;
     }
-   /*  .know-me{
-        height:600px;
-    } */
     .detail{
         clear: left;
     }

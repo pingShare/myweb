@@ -1,8 +1,8 @@
 #hobby-container img{
-    height: 600px;
+    /* height: 600px; */
     /* display: inline-block; */
     margin: 0 auto;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .carousel-container{
@@ -42,11 +42,7 @@
 .carousel-nav .selected{
     background: orange;
 }
-.carousel-arrows{
-    /*position: absolute;
-    left: 10px;
-    bottom: 10px;*/
-}
+
 
 .carousel-arrows .carousel-left.bottom{
     position: absolute;
