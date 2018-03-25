@@ -53,17 +53,18 @@
 
 @keyframes easeline {
 	0% {
-		transform: translateX(0);
+		transform: scale(1);
 	}
 	50% {
-		transform: translateX(-4.5em);		
+		transform: scale(.5);		
 	}
 	100%{
-		transform: translateX(0);
+		transform: scale(1);
 	}
 }
 
 .cbp_tmtimeline>li .cbp_tmlabel {
+	animation:easeline 1s 2s;
 	margin: 0 0 15px 25%;
 	padding: 2em;
 	font-size: 1.2em;
@@ -76,9 +77,7 @@
 	border-image: -moz-linear-gradient( red, blue) 30 30;
 	border-image: linear-gradient( red, blue) 30 30;
 }
-.cbp_tmtimeline>li .cbp_tmlabel:hover{
-	animation:easeline 1s 0s;
-}
+
 .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel {
 	/* background: rgb(255, 15, 101); */
 	border: 1px solid rgb(255, 15, 101);

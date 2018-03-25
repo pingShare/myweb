@@ -17,9 +17,7 @@ li{
     100%{transform: rotate(360deg)}
 }
 
-/* .cbp_tmlabel{
-  
-} */
+
 .bounce{
     animation: bounce 1s 0s;
 }
