@@ -12,7 +12,18 @@ a:hover,a:focus{
 li{
     list-style: none;
 }
+@keyframes bounce{
+    0%{transform: rotate(0deg)}
+    /* 50%{transform: rotate(-360deg)} */
+    100%{transform: rotate(360deg)}
+}
 
+.bounce{
+    animation: bounce 1s 0s;
+}
+.pink-circle:hover,.transparent-circle:hover{
+    animation: bounce 2s 0s;
+}
 header{
     height: 680px;
     /*background-color: rgba(0, 0, 0, 0.8);*/
@@ -38,7 +49,7 @@ header h3{
     color: white;
     cursor: pointer;
 }
-h2{
+header h2{
     color: #FFFFFF;
 }
 h1{
@@ -98,17 +109,15 @@ header span,.email span{
 }
 .knowme-container{
     margin:0 auto;
-    /* height: 360px; */
 }
 .knowme-container img{
-     width: 100%;
-   /* margin-right: 20px;
-     */
+     width: 85%;
 }
 .detail{
     font-weight:500;
     line-height: 25px;
     text-indent: 2rem;
+    /* margin: auto; */
 }
 /* skill */
 #skill{
@@ -136,18 +145,13 @@ h4{
 }
 
 /* project */
-.grid:hover {
-    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
-    margin-top: -5px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  } 
-/*hobby*/
-   #hobby-container{
-       margin-top: 30px;
-   }     
+/* .cbp_tmtime::after{
+    content: "\261E";
+} */
+    /*info  */
+ /*    #info{
+        height: 500px;
+    } */
 
 /*connect*/
 #connect-me{
@@ -221,7 +225,7 @@ h4{
     #header-sec{
         width: 100%;
         text-align: center;
-        padding: 40% 0 0 0;
+        padding: 35% 0 0 0;
     }
     .knowme-container img{
         float: left;

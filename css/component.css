@@ -17,17 +17,19 @@
 } 
 
 /* The line */
-.cbp_tmtimeline:before {
+/* .cbp_tmtimeline:before {
 	content: '';
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	width: 10px;
-	background: #afdcf8;
 	left: 20%;
+	background:rgb(255, 15, 101);
 	margin-left: -10px;
+} */
+#wapper h2{
+	color:black;
 }
-
 /* The date/time */
 .cbp_tmtimeline > li .cbp_tmtime {
 	display: block;
@@ -43,33 +45,41 @@
 
 .cbp_tmtimeline > li .cbp_tmtime span:first-child {
 	font-size: 0.9em;
-	color: #bdd0db;
+	color: rgb(226, 136, 167);
 }
 
 .cbp_tmtimeline > li .cbp_tmtime span:last-child {
 	font-size: 2.9em;
-	color: #3594cb;
+	color:rgb(226, 136, 167);
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
-	color: #6cbfee;
+	color: rgb(226, 136, 167);
 }
 
 /* Right content */
 .cbp_tmtimeline > li .cbp_tmlabel {
 	margin: 0 0 15px 25%;
-	background: #3594cb;
-	color: #fff;
+	/* background: rgb(255, 15, 101); */
+	/* color: #fff; */
 	padding: 2em;
 	font-size: 1.2em;
 	font-weight: 300;
 	line-height: 1.4;
 	position: relative;
 	border-radius: 5px;
+	border: 2px double rgb(255, 15, 101);
+	border-image: -webkit-linear-gradient( red , blue) 30 30;
+	border-image: -moz-linear-gradient( red, blue) 30 30;
+	border-image: linear-gradient( red , blue) 30 30;
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
-	background: #6cbfee;
+	/* background: rgb(255, 15, 101); */
+	border: 1px solid rgb(255, 15, 101);
+	border-image: -webkit-linear-gradient( red , blue) 30 30;
+	border-image: -moz-linear-gradient( red, blue) 30 30;
+	border-image: linear-gradient( red , blue) 30 30;
 }
 
 .cbp_tmtimeline > li .cbp_tmlabel h2 { 
@@ -87,13 +97,13 @@
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-right-color: #3594cb;
+	border-right-color:rgb(226, 136, 167);
 	border-width: 10px;
 	top: 10px;
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-	border-right-color: #6cbfee;
+	border-right-color:rgb(226, 136, 167);
 }
 
 /* The icons */
@@ -111,7 +121,8 @@
 	-webkit-font-smoothing: antialiased;
 	position: absolute;
 	color: #fff;
-	background: #46a4da;
+	/* background: #46a4da; */
+	background: rgb(226, 136, 167);
 	border-radius: 50%;
 	box-shadow: 0 0 0 8px #afdcf8;
 	text-align: center;
@@ -170,13 +181,13 @@
 		right: auto;
 		left: 20px;
 		border-right-color: transparent;
-		border-bottom-color: #3594cb;
+		border-bottom-color: rgb(226, 136, 167);
 		top: -20px;
 	}
 
 	.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
 		border-right-color: transparent;
-		border-bottom-color: #6cbfee;
+		border-bottom-color: rgb(226, 136, 167);
 	}
 
 	.cbp_tmtimeline > li .cbp_tmicon {

@@ -35,5 +35,5 @@ $(function(){
         { label: 'Velocity.js', url: 'http://julian.com/research/velocity/', target: '_top' },
         { label: 'jQuery', url: 'https://jquery.com/', target: '_top' },
     ];  
-    $( '#tag-cloud' ).svg3DTagCloud( {entries: entries} );   
+    $( '#tag-cloud' ).svg3DTagCloud( {entries: entries} );
 })
