@@ -15,6 +15,8 @@ require(["jquery-1.11.2", "carousel"], function($, Carousel){
 $(function(){
     $("#top").on("click",function(){
         $("html").animate({scrollTop:0},500);
+    }).on("tap",function(){
+        $("html").animate({scrollTop:0},500);
     });
 
     var entries = [ 
@@ -36,4 +38,5 @@ $(function(){
         { label: 'jQuery', url: 'https://jquery.com/', target: '_top' },
     ];  
     $( '#tag-cloud' ).svg3DTagCloud( {entries: entries} );
+    
 })
